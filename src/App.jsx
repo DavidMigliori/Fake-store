@@ -33,13 +33,13 @@ function App() {
   return (
     <>
       <h1>Fake Store</h1>
-      <button>Carrito</button>
+      <button onClick={()=>{setShopPage(true)}}>Carrito {shop.length}</button>
       <Products products={products} buyProducts={buyProducts} />
     </>
   )
 } else {
   return <>
-    <Carrito shop={shop} setShopPage={setShopPage} setShop={setshop}/>
+    <Carrito shop={shop} setShopPage={setShopPage} setShop={setShop}/>
   </>
 }
 }
